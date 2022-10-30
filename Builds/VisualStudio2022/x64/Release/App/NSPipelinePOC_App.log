@@ -1,0 +1,9 @@
+﻿  Controller.cpp
+  Main.cpp
+  MainComponent.cpp
+D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\MainComponent.cpp(41,44): warning C4100: 'g' : paramètre formel non référencé
+D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\Main.cpp(25,42): warning C4100: 'commandLine' : paramètre formel non référencé
+D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\Main.cpp(49,54): warning C4100: 'commandLine' : paramètre formel non référencé
+  Génération de code en cours
+  Fin de la génération du code
+  NSPipelinePOC_App.vcxproj -> D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Builds\VisualStudio2022\x64\Release\App\NSPipelinePOC.exe
