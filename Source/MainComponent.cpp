@@ -60,17 +60,30 @@ void MainComponent::resized()
     // This is called when the MainComponent is resized.
     // If you add any child components, this is where you should
     // update their positions.
-    juce::Grid grid;
-    grid.templateRows = { juce::Grid::TrackInfo(juce::Grid::Fr(1)), juce::Grid::TrackInfo(juce::Grid::Fr(1)), juce::Grid::TrackInfo(juce::Grid::Fr(1)), juce::Grid::TrackInfo(juce::Grid::Fr(1)), juce::Grid::TrackInfo(juce::Grid::Fr(1)), juce::Grid::TrackInfo(juce::Grid::Fr(1)), juce::Grid::TrackInfo(juce::Grid::Fr(0)) };
-    grid.templateColumns = { juce::Grid::TrackInfo(juce::Grid::Fr(1)), juce::Grid::TrackInfo(juce::Grid::Fr(4)) };
-    grid.items = { juce::GridItem(label1),juce::GridItem(line1).withMargin({ 2 }),
+    juce::Grid layoutDatas;
+    layoutDatas.templateRows = { juce::Grid::TrackInfo(juce::Grid::Fr(1)), juce::Grid::TrackInfo(juce::Grid::Fr(1)), juce::Grid::TrackInfo(juce::Grid::Fr(1)), juce::Grid::TrackInfo(juce::Grid::Fr(1)), juce::Grid::TrackInfo(juce::Grid::Fr(1)), juce::Grid::TrackInfo(juce::Grid::Fr(1)), juce::Grid::TrackInfo(juce::Grid::Fr(0)) };
+    layoutDatas.templateColumns = { juce::Grid::TrackInfo(juce::Grid::Fr(1)), juce::Grid::TrackInfo(juce::Grid::Fr(4))};
+    layoutDatas.items = { juce::GridItem(label1),juce::GridItem(line1).withMargin({ 2 }),
                            juce::GridItem(label2),juce::GridItem(line2).withMargin({ 2 }),
                     juce::GridItem(label3),juce::GridItem(line3).withMargin({ 2 }),
                     juce::GridItem(label4),juce::GridItem(line4).withMargin({ 2 }),
                     juce::GridItem(label5),juce::GridItem(line5).withMargin({ 2 }),
                     juce::GridItem(m_saveButton).withMargin({ 2 }),juce::GridItem(m_quitButton).withMargin({ 2 }) };
-    grid.performLayout(getLocalBounds());
+    
+    juce::Grid container;
+    container.templateRows = { juce::Grid::TrackInfo(juce::Grid::Fr(1)) };
+    container.templateColumns = { juce::Grid::TrackInfo(juce::Grid::Fr(1)), juce::Grid::TrackInfo(juce::Grid::Fr(1)) };
+    container.items = { juce::GridItem(label5),juce::GridItem(line5).withMargin({ 2 }) };
+    
+    layoutDatas.performLayout(getLocalBounds().removeFromLeft(400));
     juce::Grid buttonsGrid;
+    TreeViewComponent t;
+
+    juce::ContentComponent treeView{ "TreeView",
+                                 "A JUCE TreeView.",
+                                 t };
+    
+    treeView.setBounds(getLocalBounds().removeFromRight(100));
     /*
     buttonsGrid.templateRows = { juce::Grid::TrackInfo(juce::Grid::Fr(1))};
     buttonsGrid.templateColumns = { juce::Grid::TrackInfo(juce::Grid::Fr(1)), juce::Grid::TrackInfo(juce::Grid::Fr(4)) };
@@ -92,3 +105,5 @@ void MainComponent::SaveAsset() {
     printf("\n out path = %s \n", path);
     juce::JUCEApplicationBase::quit();
 }
+
+

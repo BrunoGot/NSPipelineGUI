@@ -1395,6 +1395,7 @@
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_gui_extra.cpp" />
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_opengl.cpp" />
+    <ClCompile Include="TreeViewComponent.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Source\Controller.h" />
@@ -1868,6 +1869,7 @@
     <ClInclude Include="C:\JUCE\modules\juce_opengl\utils\juce_OpenGLAppComponent.h" />
     <ClInclude Include="C:\JUCE\modules\juce_opengl\juce_opengl.h" />
     <ClInclude Include="..\..\JuceLibraryCode\JuceHeader.h" />
+    <ClInclude Include="TreeViewComponent.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="C:\JUCE\modules\juce_core\native\java\README.txt" />

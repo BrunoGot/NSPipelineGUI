@@ -1,31 +1,21 @@
-﻿  Controller.cpp
-  Main.cpp
-  MainComponent.cpp
-  include_juce_core.cpp
-  include_juce_data_structures.cpp
-  include_juce_events.cpp
-  include_juce_graphics.cpp
-  include_juce_gui_extra.cpp
-  include_juce_opengl.cpp
+﻿  MainComponent.cpp
+  TreeViewComponent.cpp
+D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Builds\VisualStudio2022\TreeViewComponent.cpp(3,1): error C2011: 'TreeViewComponent' : redéfinition du type 'class'
+D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Builds\VisualStudio2022\TreeViewComponent.h(3): message : voir la déclaration de 'TreeViewComponent'
 D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\MainComponent.cpp(47,44): warning C4100: 'g' : paramètre formel non référencé
-D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\MainComponent.cpp(92,35): warning C4840: utilisation non portable de la classe 'juce::String' en tant qu'argument d'une fonction variadique
-D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\MainComponent.cpp(92,35): message : 'juce::String::String' n'est pas trivial
+D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\MainComponent.cpp(80,5): error C2065: 'TreeViewComponent' : identificateur non déclaré
+D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\MainComponent.cpp(80,23): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur 't'
+D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\MainComponent.cpp(80,23): error C2065: 't' : identificateur non déclaré
+D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\MainComponent.cpp(82,11): error C2039: 'ContentComponent' n'est pas membre de 'juce'
+C:\JUCE\modules\juce_opengl\utils\juce_OpenGLAppComponent.h(26): message : voir la déclaration de 'juce'
+D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\MainComponent.cpp(82,28): error C2065: 'ContentComponent' : identificateur non déclaré
+D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\MainComponent.cpp(82,28): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur 'treeView'
+D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\MainComponent.cpp(82,28): error C2065: 'treeView' : identificateur non déclaré
+D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\MainComponent.cpp(84,34): error C2065: 't' : identificateur non déclaré
+D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\MainComponent.cpp(86,5): error C2065: 'treeView' : identificateur non déclaré
+D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\MainComponent.cpp(105,35): warning C4840: utilisation non portable de la classe 'juce::String' en tant qu'argument d'une fonction variadique
+D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\MainComponent.cpp(105,35): message : 'juce::String::String' n'est pas trivial
 C:\JUCE\modules\juce_core\text\juce_String.h(62,5): message : voir la déclaration de 'juce::String::String' (compilation du fichier source ..\..\Source\MainComponent.cpp)
-D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\MainComponent.cpp(92,35): message : le constructeur et le destructeur ne sont pas appelés ; une copie de la classe au niveau du bit est passée en tant qu'argument
+D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\MainComponent.cpp(105,35): message : le constructeur et le destructeur ne sont pas appelés ; une copie de la classe au niveau du bit est passée en tant qu'argument
 C:\JUCE\modules\juce_core\text\juce_String.h(52,17): message : voir la déclaration de 'juce::String' (compilation du fichier source ..\..\Source\MainComponent.cpp)
-D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\MainComponent.cpp(92,12): warning C4477: 'printf' : la chaîne de format '%s' nécessite un argument de type 'char *', mais l'argument variadique 1 est de type 'juce::String'
-D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\Controller.cpp(19,19): warning C4840: utilisation non portable de la classe 'juce::String' en tant qu'argument d'une fonction variadique
-D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\Controller.cpp(19,19): message : 'juce::String::String' n'est pas trivial
-C:\JUCE\modules\juce_core\text\juce_String.h(62,5): message : voir la déclaration de 'juce::String::String' (compilation du fichier source ..\..\Source\Controller.cpp)
-D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\Controller.cpp(19,19): message : le constructeur et le destructeur ne sont pas appelés ; une copie de la classe au niveau du bit est passée en tant qu'argument
-C:\JUCE\modules\juce_core\text\juce_String.h(52,17): message : voir la déclaration de 'juce::String' (compilation du fichier source ..\..\Source\Controller.cpp)
-D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\Controller.cpp(19,12): warning C4477: 'printf' : la chaîne de format '%s' nécessite un argument de type 'char *', mais l'argument variadique 1 est de type 'const juce::String'
-D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\Main.cpp(49,54): warning C4100: 'commandLine' : paramètre formel non référencé
-D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\Controller.cpp(38,43): warning C4840: utilisation non portable de la classe 'juce::String' en tant qu'argument d'une fonction variadique
-D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\Controller.cpp(38,43): message : 'juce::String::String' n'est pas trivial
-C:\JUCE\modules\juce_core\text\juce_String.h(62,5): message : voir la déclaration de 'juce::String::String' (compilation du fichier source ..\..\Source\Controller.cpp)
-D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\Controller.cpp(38,43): message : le constructeur et le destructeur ne sont pas appelés ; une copie de la classe au niveau du bit est passée en tant qu'argument
-C:\JUCE\modules\juce_core\text\juce_String.h(52,17): message : voir la déclaration de 'juce::String' (compilation du fichier source ..\..\Source\Controller.cpp)
-D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\Controller.cpp(38,16): warning C4477: 'printf' : la chaîne de format '%s' nécessite un argument de type 'char *', mais l'argument variadique 1 est de type 'const juce::String'
-  include_juce_gui_basics.cpp
-  NSPipelinePOC_App.vcxproj -> D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Builds\VisualStudio2022\x64\Debug\App\NSPipelinePOC.exe
+D:\Documents\Code\C++\NSPipelineGUI\NSPipelinePOC\Source\MainComponent.cpp(105,12): warning C4477: 'printf' : la chaîne de format '%s' nécessite un argument de type 'char *', mais l'argument variadique 1 est de type 'juce::String'

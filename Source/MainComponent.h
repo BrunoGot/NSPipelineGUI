@@ -42,6 +42,8 @@ private:
     juce::TextButton m_saveButton;
     juce::TextButton m_quitButton;
 
+    //TreeViewComponent treeView;
+
     void SaveAsset();
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };
